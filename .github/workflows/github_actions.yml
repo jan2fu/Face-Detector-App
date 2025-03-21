@@ -25,7 +25,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pwd
-          pip install -r requirements.txt  # Install dependencies listed in 'requirements.txt'
+          pip install -r requirements.txt # Install dependencies listed in 'requirements.txt'
 
       - name: Run tests
-        run: pytest  # Runs your test suite
+        run: pytest  'unit_test.py' # Runs your test suite
